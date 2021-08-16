@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3cfb1d55f5.js" crossorigin="anonymous"></script>
+    <link href="signup.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid bg-primary Header fixed-top">
+        <div class="row py-2 d-flex">
+            <!-- Logo -->
+            <div class="col logo offset-lg-1">
+                <a href="#">
+                    <img width="75" src="	https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                        alt="Flipkart" title="Flipkart">
+                </a>
+                <a href="#">Explore <span>Plus</span>
+                    <img width="10" src="	https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png">
+                </a>
+            </div>
+
+            <!-- Search -->
+            <div class="col col-md-4  search d-flex dropdown bg-white">
+                <input class="form-control dropdown-toggle" type="search"
+                    placeholder="Search for products, brands and more" aria-label="Search" id="navbarDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-search mt-2 ml-sm-1 text-primary"></i>
+                
+            </div>
+
+    <div class="col dropdown login">
+        <a class="btn bg-white text-primary"  id="loginMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true" href="login.html">
+            Login
+        </a>
+        <div class="dropdown-menu login-list col-12 aria-labelledby=" loginMenuButton">
+            <div class="d-flex">
+                <h6 class="ml-md-1">New Customer?</h6>
+                <a href="Signup.html" class="ml-auto mr-2" id="signUp">Sign Up</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-user-circle text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">My Profile</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-plus text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Flipkart Plus Zone</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-book text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Orders</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-heart text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Wishlist</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-chess-bishop text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Rewards</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-gift text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Gift Cards</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- More -->
+    <div class="col dropdown more">
+        <a class="btn dropdown-toggle text-white ml-lg-2 ml-sm-0" href="#" role="button" id="moreMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+        </a>
+
+        <div class="dropdown-menu more-list" aria-labelledby="moreMenuLink">
+            <div class="d-flex">
+                <i class="fa fa-bell text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Notification Preferences</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-archive text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Sell On Flipkart</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-question-circle text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">24x7 Customer Care</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-chart-line text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Advertise</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-download text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Download App</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="col col-md-1 d-flex justify-content-center">
+        <i class="fa fa-shopping-cart text-white mt-2" aria-hidden="true"></i>
+        <a href="" class="btn text-white">Cart</a>
+    </div>
+</div>
+</div>
+   <div class="container-fluid" id="log">
+       <div class="row">
+           <div class="col-sm-2">
+               
+           </div>
+           <div class="col-sm-3">
+               <img src="images/sign cap.PNG" />
+           </div>
+           <div class="col-sm-4" id="form">
+              <div class="mb-3" id="forminput">
+
+                <input type="text" class="form-control"  placeholder="enter Phone number">
+                <p class="privacy">By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> <a href="#">and Privacy Policy</a>.</p>
+                <a href="#" class="btn" id="login">Continue</a>
+                <p id="or">OR</p>
+                <a href="login.html" class="exist">Existing user?Login</a>
+              </div>
+           </div>
+           <div class="col-sm-2">
+
+           </div>
+       </div>
+   </div>         
+   <footer>
+    <div class="footer-row">
+        <div class="footer-col-1">
+            <div class="footer-heading">
+                 <p>ABOUT</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Flipkart Stories</a>
+                <a href="#">Press</a>
+                <a href="#">Flipkart Wholesale</a>
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <div class="footer-heading">
+                 <p>HELP</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation & Returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Report Infringement</a>
+                
+            </div>
+        </div>
+        <div class="footer-col-3">
+            <div class="footer-heading">
+                 <p>POLICY</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Return Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Security</a>
+                <a href="#">Privacy</a>
+                <a href="#">Sitemap</a>
+                <a href="#">EPR Compliance</a>
+            </div>
+        </div>
+        <div class="footer-col-4">
+            <div class="footer-heading">
+                 <p>SOCIAL</p>
+            </div>
+            <div class="footer-list">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+               
+            </div>
+        </div>
+    
+        <div class="footer-col-5">
+            <div class="footer-heading">
+                 <p>Mail Us</p>
+            </div>
+            <div class="footer-list">
+                 <p>Flipkart Internet Private Limited,
+                    Buildings Alyssa, Begonia &
+                    Clove Embassy Tech Village,
+                    Outer Ring Road, Devarabeesanahalli Village,
+                    Bengaluru, 560103,
+                    Karnataka, India</p>
+               
+            </div>
+        </div>
+    
+        <div class="footer-col-6">
+            <div class="footer-heading">
+                 <p>Registered Office Address</p>
+            </div>
+            <div class="footer-list-address">
+             <p>Flipkart Internet Private Limited,</p>
+             <p>Buildings Alyssa, Begonia &</p>
+             <p>Clove Embassy Tech Village,</p>
+             <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+             <p>Bengaluru, 560103,</p>
+             <p>Karnataka, India</p>
+             <p>CIN : U51109KA2012PTC066107</p>
+             <p> Telephone:<span> 1800 202 9898</span></p>
+               
+            </div>
+        </div>
+    </div>
+    <div class="footer-row2">
+        <div class="footer-row2-col">
+            <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fas fa-star"></i>Advertise</p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fas fa-gift"></i>Gift Cards</p>
+        </div>
+        <div class="footer-row2-col">
+            <p><i class="fas fa-question-circle"></i>Help Center</p>
+        </div>
+        <div class="footer-row2-col">
+            <p>© 2007-2021 Flipkart.com</p>
+        </div>
+        <div class="footer-row2-col">
+            <img src="images/payment-method_69e7ec.svg" alt="payments">
+        </div>
+    </div>
+    </footer>
+    
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

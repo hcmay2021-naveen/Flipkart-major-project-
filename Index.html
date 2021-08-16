@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3cfb1d55f5.js" crossorigin="anonymous"></script>
+    <style>
+        .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo a{
+    color: white;
+    font-size: .7em;
+}
+
+.logo span{
+    color: #ffe500;
+}
+
+/* Search Bar */
+.search{
+    width: calc(100% - 540px);
+    min-width: 250px;
+    margin-right: auto;
+    align-items: center;
+    color: rgb(157, 154, 154);
+}
+
+.search input{
+    font-size: .8em;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.search input:focus{
+    box-shadow: none !important;
+}
+
+.search-item {
+    margin-top: -1px;
+}
+
+.search-item h6{
+    color: rgb(101, 101, 104);
+    font-size: .8em;
+}
+
+.search-item  a{
+    font-size: .9em;
+    color: rgb(90, 90, 92);
+}
+
+/* login */ 
+.login{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.login button{
+    border-radius: 0;
+    border: 0;
+    padding: 0.375rem 2.75rem;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.login-list a{
+    font-size: .8em;
+}
+
+#signUp{
+    font-size: 1em;
+}
+
+/* More Button */
+.more{
+    width: 100%;
+    padding: 0;
+    
+}
+.more-list{
+    font-size: .8em;
+}
+.deals{
+    margin-left: 35px;
+}
+#items{
+        margin-top: 50px;
+        width: 11%;
+        margin-left: 30px;
+    }
+
+footer{
+    background-color: #172337;
+    height: 332;
+}
+.footer-row{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    padding: 30px 60px;
+}
+.footer-row2{
+    display: flex;
+    border-top: 1px solid #454d5e;
+    justify-content: space-evenly;
+}
+.footer-col-1{
+    width: 15%;
+}
+.footer-col-2{
+    width: 15%;
+}
+.footer-col-3{
+    width: 15%;
+}
+.footer-col-4{
+    width: 10%;
+}
+.footer-col-5{
+    width: 20%;
+    border-left:1px solid #454d5e ;
+    height: 120px;
+    padding-left: 25px;
+}
+.footer-col-6{
+    width: 25%;
+    padding-left: 60px;
+}
+.footer-heading p{
+ color: #878787;
+ font-size: 12px;
+ font-weight: 400;
+ text-align: left;
+ padding: 10px 0px;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+.footer-list a{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+   text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+.footer-list  p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    padding:5px 0px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-list-address p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 10px;
+    font-weight: 80px;
+    line-height: 5px;
+     cursor: pointer;
+}
+.footer-list-address span{
+    color: rgb(60,109,245);
+    cursor: pointer;
+}
+.footer-row2-col p{
+  color: white;
+    font-size: 15px;
+    font-weight: 100px;
+    line-height: 20px;
+     cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: .7px;
+}
+.fa-shopping-bag, .fa-star, .fa-gift ,.fa-question-circle{
+    color: #ffd700;
+    cursor: pointer;
+   padding-right: 10px;
+   font-size: 15px;
+}
+
+    </style>
+        
+</head>
+<body>
+    <div class="container-fluid bg-primary Header fixed-top">
+        <div class="row py-2 d-flex">
+            <!-- Logo -->
+            <div class="col logo offset-lg-1">
+                <a href="#">
+                    <img width="75" src="	https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                        alt="Flipkart" title="Flipkart">
+                </a>
+                <a href="#">Explore <span>Plus</span>
+                    <img width="10" src="	https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png">
+                </a>
+            </div>
+
+            <!-- Search -->
+            <div class="col col-md-4  search d-flex dropdown bg-white">
+                <input class="form-control dropdown-toggle" type="search"
+                    placeholder="Search for products, brands and more" aria-label="Search" id="navbarDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-search mt-2 ml-sm-1 text-primary"></i>
+                
+            </div>
+
+    <div class="col dropdown login">
+        <a class="btn bg-white text-primary"  id="loginMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true" href="login.html">
+            Login
+        </a>
+        <div class="dropdown-menu login-list col-12 aria-labelledby=" loginMenuButton">
+            <div class="d-flex">
+                <h6 class="ml-md-1">New Customer?</h6>
+                <a href="Signup.html" class="ml-auto mr-2" id="signUp">Sign Up</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-user-circle text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">My Profile</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-plus text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Flipkart Plus Zone</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-book text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Orders</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-heart text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Wishlist</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-chess-bishop text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Rewards</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-gift text-primary mt-2 ml-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="login.html">Gift Cards</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- More -->
+    <div class="col dropdown more">
+        <a class="btn dropdown-toggle text-white ml-lg-2 ml-sm-0" href="#" role="button" id="moreMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+        </a>
+
+        <div class="dropdown-menu more-list" aria-labelledby="moreMenuLink">
+            <div class="d-flex">
+                <i class="fa fa-bell text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Notification Preferences</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-archive text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Sell On Flipkart</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-question-circle text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">24x7 Customer Care</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-chart-line text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Advertise</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+                <i class="fa fa-download text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                <a class="dropdown-item" href="#">Download App</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="col col-md-1 d-flex justify-content-center">
+        <i class="fa fa-shopping-cart text-white mt-2" aria-hidden="true"></i>
+        <a href="" class="btn text-white">Cart</a>
+    </div>
+</div>
+</div>
+<div class="container-fixed">
+    <div class="row">
+        <div class="col-sm-1" id="items">
+            <a href="#"><img src="images/top offers.webp" />
+            <p>Top offers</p></a>
+        </div>
+        <div class="col-sm-1"  id="items">
+         <a href="#"><img src="images/groceries.webp" />
+         <p>Groceries</p></a>
+     </div>
+     <div class="col-sm-1" id="items">
+         <a href="mobiles.html"><img src="images/mobiles.webp" />
+         <p>Mobiles</p></a>
+     </div>
+     <div class="col-sm-1" id="items">
+        <a href="#"><img src="images/fashion.webp" />
+         <p>Fashion</p></a>
+     </div>
+     <div class="col-sm-1" id="items">
+         <a href="#"><img src="images/electronics.webp" />
+          <p>Fashion</p></a>
+      </div>
+      <div class="col-sm-1" id="items">
+         <a href="#"><img src="images/home.webp" />
+          <p>Fashion</p></a>
+      </div>
+      <div class="col-sm-1" id="items">
+         <a href="#"><img src="images/appliances.webp" />
+          <p>Fashion</p></a>
+      </div>
+      <div class="col-sm-1" id="items">
+         <a href="#"><img src="images/travel.webp" />
+          <p>Fashion</p></a>
+      </div>
+      <div class="col-sm-1" id="items">
+         <a href="#"><img src="images/toys and more.webp" />
+          <p>Fashion</p></a>
+      </div>
+    </div>
+</div>
+<hr />
+<div class="container-fluid">
+ 
+<hr />
+<h3 class="deals" >Top Deals On Electronics </h3>
+<a href="#" class="btn btn-primary view">View all</a>
+<hr />
+<div class="row">
+    <div class="col">
+        <a href="#"><img src="images/webcam.jpeg" />
+        <p>Webcams</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/wireless.jpeg" />
+        <p>Wireless Earphones</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/earphones wired.jpeg" />
+        <p> Wired Earphones </p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/bluetooth headphones.jpeg" />
+        <p>Bluetooth Earphones</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/mouse pad.jpeg" height="150px"/> 
+        <p>Mouse Pad</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/tv streaming devices.jpeg" height="150px" />
+        <p>TV streaming Devices</p>
+        <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+</div>
+</div>
+ 
+     <h3 class="deals">Top Deals On Clothing </h3>
+     <a href="#" class="btn btn-primary view">View all</a>
+     <hr />
+     <div class="row">
+         <div class="col">
+             <a href="#"><img src="images/denim.jpeg" />
+             <p>Denim Shirt</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/made.jpeg" />
+             <p>Made in India Shirts</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/cargo.jpeg" />
+             <p> Cargo Jeans</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/m-hljk000297-highlander-original-imafhhbqevhdastj.jpeg" />
+             <p>Jeans Jacket</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/hrx.jpeg" height="150px"/> 
+             <p>HRX Shirts</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/couple.jpeg" height="150px" />
+             <p>Couple T-Shirts</p>
+             <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+     </div>
+</div>
+<h3 class="deals">Top Deals For Travel &Accesories </h3>
+     <a href="#" class="btn btn-primary view">View all</a>
+     <hr />
+     <div class="row">
+         <div class="col">
+             <a href="#"><img src="images/spects.jpeg" />
+             <p>Spects</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>699</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/crocs.jpeg" />
+             <p>Crocs</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>599</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/casio.jpeg" />
+             <p>Watches </p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>899</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/travel access.jpeg" />
+             <p>Travel Bag</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>599</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/backpacks.jpeg" height="150px"/> 
+             <p>Backpack</p>
+             <p>From &nbsp;<i class="fas fa-rupee-sign"></i>5S99</p>
+             </a>
+         </div>
+         <div class="col">
+             <a href="#"><img src="images/shoe.jpeg" height="150px" />
+             <p>Nike Shoes</p>
+             <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+             </a>
+         </div>
+     </div>
+</div>
+<h3 class="deals">Top Deals On Home appliances</h3>
+<a href="#" class="btn btn-primary view">View all</a>
+<hr />
+<div class="row">
+    <div class="col">
+        <a href="#"><img src="images/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg" />
+        <p>Pigeon Kettel</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>699</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/book shelves.jpeg" height="140px" />
+        <p>Book Shelves</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>599</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/sewing machines.jpeg" />
+        <p> Sweing Machines</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>899</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/egg-lassi-butter-milk-maker-cakes-hand-mixer-royatto-original-imag4adhyhequpzz.jpeg" />
+        <p>Butter milk maker</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>599</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/8k uhd.jpeg" width="180px"  height="150px"/> 
+        <p>8K UHD+ Tv</p>
+        <p>From &nbsp;<i class="fas fa-rupee-sign"></i>21499</p>
+        </a>
+    </div>
+    <div class="col">
+        <a href="#"><img src="images/swings.jpeg" height="150px" />
+        <p>swings</p>
+        <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+        </a>
+    </div>
+</div>
+</div>
+
+<h3 class="deals" >Top Deals On Laptops ..</h3>
+<a href="#" class="btn btn-primary view">View all</a>
+<hr />
+<div class="row">
+ <div class="col">
+     <a href="#"><img src="images/pop.jpeg" height="130px" />
+     <p>Pops</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/speakers.jpeg" height="130px" />
+     <p>speakers</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/lenovo ideapad.jpeg" />
+     <p> Lenovo Ideapad </p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>40,499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/alcatel.jpeg" />
+     <p>alcatel</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>899</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/microsoft.jpeg" height="150px"/> 
+     <p>Mouse Pad</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/tv streaming devices.jpeg" height="150px" />
+     <p>TV streaming Devices</p>
+     <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+</div>
+</div>
+
+<h3 class="deals">Specials Deals </h3>
+<a href="#" class="btn btn-primary view">View all</a>
+<hr />
+<div class="row">
+ <div class="col">
+     <a href="#"><img src="images/cookers.jpeg" />
+     <p>cookers</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>1499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/power and hand tool.jpeg" />
+     <p>Power and hand tool</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/trimmers.jpeg" />
+     <p> Trimmers </p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/addidas.jpeg" height="120px" />
+     <p>Adidas shoes</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/timex.jpeg" height="150px"/> 
+     <p>Timex Watches</p>
+     <p>From &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+ <div class="col">
+     <a href="#"><img src="images/coffee.jpeg" height="150px" />
+     <p>TV streaming Devices</p>
+     <p>Form &nbsp;<i class="fas fa-rupee-sign"></i>499</p>
+     </a>
+ </div>
+</div>
+</div>
+<footer>
+<div class="footer-row">
+    <div class="footer-col-1">
+        <div class="footer-heading">
+             <p>ABOUT</p>
+        </div>
+        <div class="footer-list">
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Flipkart Stories</a>
+            <a href="#">Press</a>
+            <a href="#">Flipkart Wholesale</a>
+        </div>
+    </div>
+    <div class="footer-col-2">
+        <div class="footer-heading">
+             <p>HELP</p>
+        </div>
+        <div class="footer-list">
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation & Returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Report Infringement</a>
+            
+        </div>
+    </div>
+    <div class="footer-col-3">
+        <div class="footer-heading">
+             <p>POLICY</p>
+        </div>
+        <div class="footer-list">
+            <a href="#">Return Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">EPR Compliance</a>
+        </div>
+    </div>
+    <div class="footer-col-4">
+        <div class="footer-heading">
+             <p>SOCIAL</p>
+        </div>
+        <div class="footer-list">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+           
+        </div>
+    </div>
+
+    <div class="footer-col-5">
+        <div class="footer-heading">
+             <p>Mail Us</p>
+        </div>
+        <div class="footer-list">
+             <p>Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India</p>
+           
+        </div>
+    </div>
+
+    <div class="footer-col-6">
+        <div class="footer-heading">
+             <p>Registered Office Address</p>
+        </div>
+        <div class="footer-list-address">
+         <p>Flipkart Internet Private Limited,</p>
+         <p>Buildings Alyssa, Begonia &</p>
+         <p>Clove Embassy Tech Village,</p>
+         <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+         <p>Bengaluru, 560103,</p>
+         <p>Karnataka, India</p>
+         <p>CIN : U51109KA2012PTC066107</p>
+         <p> Telephone:<span> 1800 202 9898</span></p>
+           
+        </div>
+    </div>
+</div>
+<div class="footer-row2">
+    <div class="footer-row2-col">
+        <p> <i class="fas fa-shopping-bag"></i>Sell On Flipkart</p>
+    </div>
+    <div class="footer-row2-col">
+        <p><i class="fas fa-star"></i>Advertise</p>
+    </div>
+    <div class="footer-row2-col">
+        <p><i class="fas fa-gift"></i>Gift Cards</p>
+    </div>
+    <div class="footer-row2-col">
+        <p><i class="fas fa-question-circle"></i>Help Center</p>
+    </div>
+    <div class="footer-row2-col">
+        <p>© 2007-2021 Flipkart.com</p>
+    </div>
+    <div class="footer-row2-col">
+        <img src="images/payment-method_69e7ec.svg" alt="payments">
+    </div>
+</div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
